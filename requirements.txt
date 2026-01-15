@@ -1,0 +1,35 @@
+# Core application
+streamlit>=1.38
+pandas>=2.0
+numpy>=1.26
+scikit-learn>=1.4
+scipy>=1.11
+
+# Visualization
+plotly>=5.20
+
+# Explainability
+shap>=0.45
+
+# Model persistence
+joblib>=1.3
+
+# GenAI Copilot
+groq>=0.9
+python-dotenv>=1.0
+
+# File I/O
+openpyxl>=3.1
+
+# Column mapping (fuzzy matching)
+rapidfuzz>=3.6
+
+# --- Optional, heavier gradient-boosting models -----------------------------
+# The application detects these at runtime and simply omits them from the
+# model dropdown if not installed. Uncomment to enable:
+# xgboost>=2.0
+# lightgbm>=4.3
+# catboost>=1.2
+
+# --- Testing -----------------------------------------------------------------
+pytest>=7.4

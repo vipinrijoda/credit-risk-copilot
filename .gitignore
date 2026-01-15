@@ -1,0 +1,26 @@
+# Environment / secrets
+.env
+
+project_structure.txt
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+venv/
+.venv/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Data / model artifacts users don't want versioned (built-in demo files ARE
+# tracked; uncomment below if you don't want to version your own retrained
+# artifacts or uploaded data copies)
+# data/processed/*
+# artifacts/*.joblib
+# artifacts/*.json
