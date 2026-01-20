@@ -1,0 +1,139 @@
+{
+  "model_type": "RandomForestClassifier",
+  "model_name": "Random Forest",
+  "trained_at": "2026-09-05T22:28:59.066611+00:00",
+  "dataset_rows": 6000,
+  "training_rows": 4800,
+  "validation_rows": 1200,
+  "features_numeric": [
+    "annual_income",
+    "monthly_income",
+    "employment_duration_years",
+    "loan_amount",
+    "loan_term_months",
+    "interest_rate",
+    "existing_debt",
+    "existing_emi",
+    "credit_history_years",
+    "credit_utilization",
+    "total_credit_accounts",
+    "previous_delinquencies",
+    "loan_to_income_ratio",
+    "estimated_monthly_emi",
+    "emi_to_income_ratio",
+    "debt_to_income_ratio"
+  ],
+  "features_categorical": [
+    "employment_type",
+    "loan_purpose",
+    "residential_status"
+  ],
+  "target_column": "default",
+  "threshold": 0.675,
+  "threshold_strategy": "f1",
+  "metrics": {
+    "roc_auc": 0.8848113036751756,
+    "accuracy": 0.8775,
+    "precision": 0.74235807860262,
+    "recall": 0.6589147286821705,
+    "f1": 0.6981519507186859
+  },
+  "is_demo_model": true,
+  "data_source_type": "synthetic",
+  "excluded_columns": [],
+  "sklearn_version": "1.8.0",
+  "python_version": "3.12.3",
+  "distribution_reference": {
+    "numeric": {
+      "annual_income": {
+        "p1": 90000.0,
+        "p99": 1793703.0,
+        "median": 500050.0
+      },
+      "monthly_income": {
+        "p1": 7500.0,
+        "p99": 149475.25,
+        "median": 41671.0
+      },
+      "employment_duration_years": {
+        "p1": 0.0,
+        "p99": 29.6,
+        "median": 3.2
+      },
+      "loan_amount": {
+        "p1": 15000.0,
+        "p99": 4774120.000000003,
+        "median": 241000.0
+      },
+      "loan_term_months": {
+        "p1": 12.0,
+        "p99": 360.0,
+        "median": 48.0
+      },
+      "interest_rate": {
+        "p1": 7.0,
+        "p99": 20.20050000000001,
+        "median": 12.855
+      },
+      "existing_debt": {
+        "p1": 7698.0,
+        "p99": 990451.0000000012,
+        "median": 150700.0
+      },
+      "existing_emi": {
+        "p1": 399.99,
+        "p99": 54730.26000000005,
+        "median": 8523.5
+      },
+      "credit_history_years": {
+        "p1": 0.0,
+        "p99": 18.90100000000002,
+        "median": 2.8
+      },
+      "credit_utilization": {
+        "p1": 0.0,
+        "p99": 90.20100000000002,
+        "median": 37.7
+      },
+      "total_credit_accounts": {
+        "p1": 0.0,
+        "p99": 8.0,
+        "median": 3.0
+      },
+      "previous_delinquencies": {
+        "p1": 0.0,
+        "p99": 2.0100000000002183,
+        "median": 0.0
+      }
+    },
+    "categorical": {
+      "employment_type": [
+        "Business Owner",
+        "Government Employee",
+        "Other",
+        "Professional",
+        "Retired",
+        "Salaried",
+        "Self-Employed"
+      ],
+      "loan_purpose": [
+        "Business Loan",
+        "Consumer Durable",
+        "Debt Consolidation",
+        "Education Loan",
+        "Home Loan",
+        "Medical Expenses",
+        "Other",
+        "Personal Loan",
+        "Vehicle Loan"
+      ],
+      "residential_status": [
+        "Company Provided",
+        "Living with Family",
+        "Other",
+        "Owned",
+        "Rented"
+      ]
+    }
+  }
+}
