@@ -40,7 +40,7 @@ with st.sidebar:
     st.caption("**Active dataset:**")
     st.caption(st.session_state.get("active_dataset_name", "n/a"))
     st.caption("**Active model:**")
-    st.caption(f"{metadata.get('model_type', 'None')} ({metadata.get('data_source_type', 'n/a')})")
+    st.caption(metadata.get("model_type", "None"))
 
     st.divider()
     st.caption(
